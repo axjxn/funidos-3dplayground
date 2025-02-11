@@ -19,11 +19,11 @@
 
 @layer utilities {
   .miniclip-gradient {
-    background: linear-gradient(180deg, #0a4d1c 0%, #063311 100%);
+    background: linear-gradient(180deg, #8B5CF6 0%, #7C3AED 100%);
   }
   
   .status-bar-gradient {
-    background: linear-gradient(180deg, #0c5c22 0%, #084318 100%);
+    background: linear-gradient(180deg, #9333EA 0%, #7C3AED 100%);
   }
 
   .button-3d {

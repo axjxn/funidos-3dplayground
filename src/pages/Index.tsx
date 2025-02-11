@@ -15,10 +15,10 @@ const Index = () => {
         <div className="flex items-center gap-4">
           <Settings className="w-6 h-6 text-white" />
           <div className="flex items-center">
-            <div className="bg-yellow-400 p-1 rounded-md">
+            <div className="bg-[#FDE047] p-1 rounded-md">
               <span className="text-black font-bold">9999</span>
             </div>
-            <div className="ml-2 bg-yellow-400 p-1 rounded-md">
+            <div className="ml-2 bg-[#FDE047] p-1 rounded-md">
               <span className="text-black font-bold">1,000,000</span>
             </div>
           </div>
@@ -26,9 +26,9 @@ const Index = () => {
       </div>
 
       {/* Progress Bar */}
-      <div className="w-full max-w-md mx-auto h-8 bg-[#063311] rounded-full overflow-hidden mb-6 card-3d">
+      <div className="w-full max-w-md mx-auto h-8 bg-[#7C3AED] rounded-full overflow-hidden mb-6 card-3d">
         <div
-          className="h-full bg-[#4CAF50] transition-all duration-500"
+          className="h-full bg-[#F472B6] transition-all duration-500"
           style={{ width: `${progress}%` }}
         ></div>
       </div>
@@ -40,7 +40,7 @@ const Index = () => {
       <motion.div
         initial={{ scale: 0.9 }}
         animate={{ scale: 1 }}
-        className="w-24 h-24 bg-yellow-400 rounded-full flex items-center justify-center mb-8 mx-auto button-3d"
+        className="w-24 h-24 bg-[#FDE047] rounded-full flex items-center justify-center mb-8 mx-auto button-3d"
       >
         <span className="text-5xl font-bold text-black">{currentNumber}</span>
       </motion.div>
@@ -64,7 +64,7 @@ const Index = () => {
             key={number}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="aspect-square bg-[#4CAF50] rounded-lg flex items-center justify-center font-bold text-2xl button-3d cursor-pointer text-white"
+            className="aspect-square bg-[#F472B6] rounded-lg flex items-center justify-center font-bold text-2xl button-3d cursor-pointer text-white"
           >
             {number}
           </motion.div>
@@ -95,7 +95,7 @@ const Index = () => {
       <motion.button
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="bg-[#4CAF50] px-12 py-4 rounded-full text-2xl font-bold button-3d text-white mx-auto mb-20"
+        className="bg-[#F472B6] px-12 py-4 rounded-full text-2xl font-bold button-3d text-white mx-auto mb-20"
       >
         BINGO
       </motion.button>
