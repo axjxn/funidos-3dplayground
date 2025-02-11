@@ -18,12 +18,20 @@
 }
 
 @layer utilities {
-  .miniclip-gradient {
-    background: radial-gradient(circle at center, #FF6B00 0%, #FF3D00 100%);
+  .game-gradient {
+    background: 
+      radial-gradient(circle at center, 
+        rgba(255, 183, 0, 0.2) 0%,
+        rgba(255, 107, 0, 0) 70%
+      ),
+      linear-gradient(
+        rgba(0, 0, 0, 0.9),
+        rgba(20, 20, 20, 0.95)
+      );
   }
   
   .status-bar-gradient {
-    background: linear-gradient(180deg, #FF8F00 0%, #FF6D00 100%);
+    background: linear-gradient(180deg, #FF6B00 0%, #FF3D00 100%);
   }
 
   .button-3d {
@@ -37,18 +45,6 @@
   }
 
   .text-shadow {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  }
-
-  .sunburst {
-    background: 
-      radial-gradient(circle at center, 
-        rgba(255, 166, 0, 0.2) 0%,
-        rgba(255, 166, 0, 0) 70%
-      ),
-      linear-gradient(
-        rgba(255, 107, 0, 0.9),
-        rgba(255, 61, 0, 0.9)
-      );
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 }
